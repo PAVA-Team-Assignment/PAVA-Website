@@ -1,302 +1,378 @@
 body::-webkit-scrollbar {
-  height: 100%;
-  width: 100%;
-  display: none;
+    height: 100%;
+    width: 100%;
+    display: none;
 }
 
 .navbar {
-  padding: 0%;
-  display: flex;
-  flex: auto;
-  box-shadow: 0px 1px 20px 1px rgb(0 0 0 / 48%);
+    padding: 0%;
+    display: flex;
+    flex: auto;
+    box-shadow: 0px 1px 20px 1px rgb(0 0 0 / 48%);
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
 }
+
 .navbar-links {
-  display: flex;
-  margin-left: auto;
-  padding: 2px;
+    display: flex;
+    margin-left: auto;
+    padding: 2px;
 }
+
 .logo {
-  background: transparent;
-  width: 4%;
-  padding: 8px;
-  margin: 0px;
-  margin-left: 3%;
+    background: transparent;
+    width: 4%;
+    padding: 8px;
+    margin: 0px;
+    margin-left: 3%;
 }
-.nav-item {
-}
-.navbar-brand {
-}
+
 .nav-link:hover {
-  color: black !important;
+    color: black !important;
 }
 
 .site-banner {
-  background-color: rgb(63, 62, 62);
-  background-image: url(/elements/backgroung.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  align-content: space-around;
-  overflow: hidden;
+    background-color: rgb(63, 62, 62);
+    background-image: url(/elements/backgroung.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    overflow: hidden;
 }
+
 .product {
-  height: 80%;
-  width: 55%;
-  margin-left: 10%;
-  margin-top: 10%;
-  margin-bottom: 20%;
-  -webkit-box-reflect: below 0.5px
-    linear-gradient(transparent, rgb(0 0 0 / 50%));
+    height: 80%;
+    width: 55%;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 20%;
+    -webkit-box-reflect: below 0.5px linear-gradient(transparent, rgb(0 0 0 / 50%));
 }
+
 .floating {
-  animation-name: floating;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  padding: 2%;
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    padding: 2%;
 }
+
 @keyframes floating {
-  0% {
-    transform: translate(0, 0px);
-  }
-  50% {
-    transform: translate(0, 30px);
-  }
-  100% {
-    transform: translate(0, 0px);
-  }
+    0% {
+        transform: translate(0, 0px);
+    }
+    50% {
+        transform: translate(0, 30px);
+    }
+    100% {
+        transform: translate(0, 0px);
+    }
 }
+
 .title-content {
-  display: flex;
-  width: 45%;
-  height: 100%;
-  flex-direction: column;
-  margin: 10%;
+    display: flex;
+    width: 45%;
+    height: 100%;
+    flex-direction: column;
+    margin: 10%;
 }
+
 .brand-name {
-  width: 60%;
-  margin-top: 10%;
-  margin-left: 5%;
-  margin-bottom: 5%;
+    width: 60%;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-bottom: 5%;
 }
+
 .brand-tagline {
-  margin-left: 5%;
-  margin-top: 2%;
-  color: white;
+    margin-left: 5%;
+    margin-top: 2%;
+    color: white;
 }
+
 .brand-sub-tagline {
-  margin-left: 5%;
-  color: white;
+    margin-left: 5%;
+    color: white;
 }
+
 .site-banner-button {
-  margin-left: 5%;
-  margin-bottom: 2%;
-  margin-top: 5%;
-  box-shadow: inset 0px 3px 20px 10px rgb(0 0 0 / 48%);
-  -webkit-box-reflect: below 2.5px
-    linear-gradient(transparent, rgb(0 0 0 / 12%));
+    margin-left: 5%;
+    margin-bottom: 2%;
+    margin-top: 5%;
+    box-shadow: inset 0px 3px 20px 10px rgb(0 0 0 / 48%);
+    -webkit-box-reflect: below 2.5px linear-gradient(transparent, rgb(0 0 0 / 12%));
 }
+
 .site-banner-button:hover {
-  box-shadow: 0px 3px 20px 10px rgb(0 0 0 / 48%);
+    box-shadow: 0px 3px 20px 10px rgb(0 0 0 / 48%);
 }
 
 .features-section {
-  background: rgb(54, 54, 54);
-  background: linear-gradient(
-    180deg,
-    rgba(54, 54, 54, 1) 0%,
-    rgba(23, 23, 23, 1) 100%
-  );
-  padding-bottom: 5%;
+    background: rgb(54, 54, 54);
+    background: linear-gradient( 180deg, rgba(54, 54, 54, 1) 0%, rgba(23, 23, 23, 1) 100%);
+    padding-bottom: 5%;
 }
-.features-title {
-  padding-top: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-shadow: 0px 8px 15px #000000;
-  color: white;
-}
-.carousel-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-.carousel {
-  width: 38%;
-  display: flex;
-  margin-left: 2%;
-  margin-right: 2%;
-}
-.carousel-inner {
-  width: 100%;
-  overflow: hidden;
-  box-shadow: inset 0px 1px 20px 20px rgb(0 0 0 / 39%);
-  margin: 4%;
-  background-color: rgb(150 150 150);
-  border-radius: 40px;
-  padding: 2%;
-}
-.carousel-image {
-  padding-bottom: 20%;
-  padding-top: 5%;
-  padding-left: 5%;
-  width: 100%;
-  padding-right: 5%;
-  border-radius: 30px;
 
-  transform: scale(0.9);
+.features-title {
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0px 8px 15px #000000;
+    color: white;
+    margin-bottom: 6%;
 }
+
+.carousel-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.carousel {
+    width: 38%;
+    display: flex;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 5%;
+}
+
+.carousel-inner {
+    width: 100%;
+    overflow: hidden;
+    box-shadow: inset 0px 1px 20px 20px rgb(0 0 0 / 39%);
+    margin: 4%;
+    background-color: rgb(150 150 150);
+    border-radius: 40px;
+    padding: 3%;
+}
+
+.carousel-image {
+    padding-bottom: 20%;
+    padding-top: 5%;
+    padding-left: 5%;
+    width: 100%;
+    padding-right: 5%;
+    border-radius: 30px;
+    transform: scale(0.9);
+}
+
 .carousel-dark .carousel-caption {
-  color: #000;
-  margin-bottom: -5%;
+    color: #000;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
+    margin-bottom: -5%;
 }
+
 .carousel-indicators {
-  margin-bottom: 5%;
-  padding-bottom: 2%;
+    margin-bottom: 5%;
+    padding-bottom: 2%;
 }
+
 .carousel-control {
-  margin: 2%;
+    margin: 2%;
 }
+
 .carousel-title {
-  text-shadow: 0px 0px 20px #000000cc;
+    text-shadow: 0px 0px 20px #000000cc;
 }
 
 .social-media-section {
-  display: flex;
-  background: linear-gradient(180deg, rgb(32 32 32) 0%, rgb(104 104 104) 100%);
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
+    display: flex;
+    background: linear-gradient(180deg, rgb(32 32 32) 0%, rgb(104 104 104) 100%);
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 }
+
 .ad-container {
-  height: auto;
-  width: 50%;
-  display: flex;
-  margin: 5%;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
+    height: auto;
+    width: 50%;
+    display: flex;
+    margin-top: 2%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
 }
+
 .ad {
-  width: 100%;
-  box-shadow: 0px 2px 20px 20px rgb(0 0 0 / 25%);
-  border-radius: 25px;
+    width: 100%;
+    box-shadow: 0px 2px 20px 20px rgb(0 0 0 / 25%);
+    border-radius: 25px;
 }
+
 .response-section {
-  width: 100%;
-  margin-bottom: 2%;
-  padding-right: 5%;
-  padding-left: 5%;
+    width: 100%;
+    margin-bottom: 8%;
+    padding-right: 5%;
+    padding-left: 5%;
 }
+
 .tweet {
-  transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
+
 .tweet:hover {
-  transition-duration: 0.5s;
-  transform: scale(1.1);
-  box-shadow: 0px 0px 50px rgb(0, 0, 0);
+    transition-duration: 0.5s;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 50px rgb(0, 0, 0);
 }
 
 .creators-container {
-  position: relative;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
+
 .first-row {
-  display: flex;
-  margin-top: 5%;
+    display: flex;
+    margin-top: 5%;
 }
+
 .second-row {
-  display: flex;
-  align-content: center;
-  margin-bottom: 5%;
-  margin-left: 17%;
-  margin-right: 17%;
+    display: flex;
+    align-content: center;
+    margin-bottom: 5%;
+    margin-left: 17%;
+    margin-right: 17%;
 }
+
 .creators-container .box {
-  position: relative;
-  width: 250px;
-  height: 250px;
-  overflow: hidden;
-  transition: 0.5s;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 140px;
-  margin-bottom: 2%;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 140px;
+    margin-bottom: 2%;
 }
+
 .creators-container .box:hover {
-  z-index: 1;
-  transform: scale(1.25);
-  box-shadow: 0px 0px 50px rgb(70, 70, 255);
-  border-radius: 10px;
+    z-index: 1;
+    transform: scale(1.25);
+    box-shadow: 0px 0px 50px rgb(70, 70, 255);
+    border-radius: 10px;
 }
+
 .creators-container .box .imgBx {
-  width: 50%;
+    width: 50%;
 }
+
 .creators-container .box .imgBx:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background: linear-gradient(
-    180deg,
-    rgb(70, 70, 255, 0.8),
-    hsla(0, 0%, 0%, 0.8)
-  );
-  mix-blend-mode: multiply;
-  opacity: 0;
-  transition: 0.5s;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient( 180deg, rgb(70, 70, 255, 0.8), hsla(0, 0%, 0%, 0.8));
+    mix-blend-mode: multiply;
+    opacity: 0;
+    transition: 0.5s;
 }
+
 .creators-container .box:hover .imgBx:before {
-  opacity: 1;
+    opacity: 1;
 }
+
 .creators-container .box .imgBx img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+
 .creators-container .box .content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  display: flex;
-  padding: 20px;
-  align-items: flex-end;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    padding: 20px;
+    align-items: flex-end;
 }
+
 .creators-container .box .content h2 {
-  color: #fff;
-  transition: 0.5s;
-  text-transform: uppercase;
-  margin-bottom: 5px;
-  font-size: 20px;
-  transform: translateY(300px);
+    color: #fff;
+    transition: 0.5s;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 20px;
+    transform: translateY(300px);
 }
+
 .creators-container .box:hover .content h2 {
-  transform: translateY(0);
-  transition-delay: 0.2s;
+    transform: translateY(0);
+    transition-delay: 0.2s;
 }
+
 .creators-container .box .content p {
-  color: #fff;
-  transform: translateY(300px);
-  transition: 0.5s;
-  font-size: 14px;
+    color: #fff;
+    transform: translateY(300px);
+    transition: 0.5s;
+    font-size: 14px;
 }
+
 .creators-container .box:hover .content p {
-  transform: translateY(0);
-  transition-delay: 0.3s;
+    transform: translateY(0);
+    transition-delay: 0.3s;
+}
+
+.review_section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: rgb(63, 62, 62);
+    background-image: url(/elements/backgroung.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-check-label {
+    color: white;
+}
+
+.review-form {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 200;
+}
+
+.contact-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
+}
+
+.footer-copyright {
+    background-color: #000000f5;
 }

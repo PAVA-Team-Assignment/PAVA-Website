@@ -32,7 +32,7 @@ body::-webkit-scrollbar {
 }
 
 .site-banner {
-    background-image: url("	https://github.com/PAVA-Team-Assignment/PAVA-Website/blob/master/elements/backgroung.png");
+    background-image: url("https://raw.githubusercontent.com/PAVA-Team-Assignment/PAVA-Website/master/elements/backgroung.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

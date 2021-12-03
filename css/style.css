@@ -32,8 +32,7 @@ body::-webkit-scrollbar {
 }
 
 .site-banner {
-    background-color: rgb(63, 62, 62);
-    background-image: url(/elements/backgroung.png);
+    background-image: url("/elements/backgroung.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -326,7 +325,6 @@ body::-webkit-scrollbar {
     padding-right: 10%;
     padding-top: 2%;
     padding-bottom: 2%;
-    background-color: rgb(63, 62, 62);
     background-image: url(/elements/backgroung.png);
     background-position: center;
     background-repeat: no-repeat;

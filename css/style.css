@@ -335,8 +335,12 @@ body::-webkit-scrollbar {
   padding-bottom: 10%;
   align-items: flex-end;
 }
-.creators-links i {
-  margin-right: 4%;
+
+p.description {
+  line-height: 2;
+}
+p.follow-us {
+  word-spacing: 20px;
 }
 
 .creators-container .box .content h4 {

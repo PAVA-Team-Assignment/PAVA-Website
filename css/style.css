@@ -81,7 +81,7 @@ body::-webkit-scrollbar {
 }
 
 .brand-name {
-  animation: Fade_in 3s ease;
+  animation: Fade_in 4s ease;
   width: 60%;
   margin-top: 10%;
   margin-left: 5%;
@@ -89,20 +89,20 @@ body::-webkit-scrollbar {
 }
 
 .brand-tagline {
-  animation: Fade_in 3.5s ease;
+  animation: Fade_in 5s ease;
   margin-left: 5%;
   margin-top: 2%;
   color: white;
 }
 
 .brand-sub-tagline {
-  animation: Fade_in 4s ease;
+  animation: Fade_in 5s ease;
   margin-left: 5%;
   color: white;
 }
 
 .site-banner-button {
-  animation: Slide_up 2s ease;
+  animation: Slide_up 2.5s ease;
   margin-left: 5%;
   margin-bottom: 2%;
   margin-top: 5%;

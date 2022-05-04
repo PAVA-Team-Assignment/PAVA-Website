@@ -1,416 +1,141 @@
 body::-webkit-scrollbar {
-  height: 100%;
-  width: 100%;
-  display: none;
+    height: 100%;
+    width: 100%;
+    display: none;
 }
 
-.navbar {
-  padding: 0%;
-  display: flex;
-  flex: auto;
-  box-shadow: 0px 1px 20px 1px rgb(0 0 0 / 48%);
-  font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 500;
+.white0 {
+    color: white;
 }
-
-.navbar-links {
-  display: flex;
-  margin-left: auto;
-  padding: 2px;
+.blue0 {
+    color: #38bdf8;
+}
+.black0 {
+    color: #171717;
+}
+.black1 {
+    color: #202020;
+}
+.grey0 {
+    color: #3a3a3a;
+}
+.grey1 {
+    color: #afaeae;
 }
 
 .logo {
-  background: transparent;
-  width: 4%;
-  padding: 8px;
-  margin: 0px;
-  margin-left: 3%;
+    width: 20%;
+}
+
+.navbar {
+    padding: 0%;
+    box-shadow: 0px 1px 20px 1px rgb(0 0 0 / 48%);
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
+    background-color: #171717;
+}
+
+.navbar-collapse {
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-nav {
+    width: 100%;
+    justify-content: space-between;
+    margin-right: 30%;
+}
+
+.nav-item {
+    display: flex;
+}
+
+.nav-link {
+    color: white !important;
 }
 
 .nav-link:hover {
-  color: black !important;
+    color: #38bdf8 !important;
+}
+.no-hover {
+    pointer-events: none;
 }
 
 .site-banner {
-  background-image: url("https://raw.githubusercontent.com/PAVA-Team-Assignment/PAVA-Website/master/elements/backgroung.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  align-content: space-around;
-  overflow: hidden;
-}
-
-.product {
-  height: 80%;
-  width: 55%;
-  margin-left: 10%;
-  margin-top: 10%;
-  margin-bottom: 20%;
-  -webkit-box-reflect: below 0.5px
-    linear-gradient(transparent, rgb(0 0 0 / 50%));
-}
-
-.floating {
-  animation-name: floating;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  padding: 2%;
-}
-
-@keyframes floating {
-  0% {
-    transform: translate(0, 0px);
-  }
-  50% {
-    transform: translate(0, 30px);
-  }
-  100% {
-    transform: translate(0, 0px);
-  }
+    background-color: #3a3a3a;
+    overflow: hidden;
 }
 
 .title-content {
-  display: flex;
-  width: 45%;
-  height: 100%;
-  flex-direction: column;
-  margin: 10%;
-}
-
-.brand-name {
-  animation: Fade_in 4s ease;
-  width: 60%;
-  margin-top: 10%;
-  margin-left: 5%;
-  margin-bottom: 5%;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    margin-top: 8%;
+    margin-left: 5%;
+    margin-bottom: 5%;
 }
 
 .brand-tagline {
-  animation: Fade_in 5s ease;
-  margin-left: 5%;
-  margin-top: 2%;
-  color: white;
+    margin-left: 5%;
+    margin-top: 2%;
 }
 
 .brand-sub-tagline {
-  animation: Fade_in 5s ease;
-  margin-left: 5%;
-  color: white;
-}
-
-.site-banner-button {
-  animation: Slide_up 2.5s ease;
-  margin-left: 5%;
-  margin-bottom: 2%;
-  margin-top: 5%;
-  box-shadow: inset 0px 3px 20px 10px rgb(0 0 0 / 48%);
-  -webkit-box-reflect: below 2.5px
-    linear-gradient(transparent, rgb(0 0 0 / 12%));
-}
-
-@media (min-width: 1025px) {
-  @keyframes Fade_in {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-}
-@media (min-width: 1025px) {
-  @keyframes Slide_up {
-    0% {
-      transform: translateY(1500px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
+    margin-left: 5%;
+    margin-top: 5%;
 }
 
 .site-banner-button:hover {
-  box-shadow: 0px 3px 20px 10px rgb(0 0 0 / 48%);
-}
-
-.features-section {
-  background: rgb(54, 54, 54);
-  background: linear-gradient(
-    180deg,
-    rgba(54, 54, 54, 1) 0%,
-    rgba(23, 23, 23, 1) 100%
-  );
-  padding-bottom: 5%;
-}
-
-.features-title {
-  font-family: "Righteous", cursive;
-  padding-top: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-shadow: 0px 8px 15px #00000075;
-  color: white;
-  margin-bottom: 6%;
-}
-
-.carousel-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.carousel {
-  width: 38%;
-  display: flex;
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-bottom: 5%;
-}
-
-.carousel-inner {
-  width: 100%;
-  overflow: hidden;
-  box-shadow: inset 0px 1px 20px 20px rgb(0 0 0 / 39%);
-  margin: 4%;
-  background-color: rgb(150 150 150);
-  border-radius: 40px;
-  padding: 3%;
-}
-
-.carousel-image {
-  padding-bottom: 20%;
-  padding-top: 5%;
-  padding-left: 5%;
-  width: 100%;
-  padding-right: 5%;
-  border-radius: 30px;
-  transform: scale(0.9);
-}
-
-.carousel-dark .carousel-caption {
-  color: #000;
-  font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 500;
-  margin-bottom: -5%;
-}
-
-.carousel-indicators {
-  margin-bottom: 5%;
-  padding-bottom: 2%;
-}
-
-.carousel-control {
-  margin: 2%;
-}
-
-.carousel-title {
-  text-shadow: 0px 0px 20px #000000cc;
-}
-
-.social-media-section {
-  display: flex;
-  background: linear-gradient(180deg, rgb(32 32 32) 0%, rgb(104 104 104) 100%);
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-}
-
-.ad-container {
-  height: auto;
-  width: 50%;
-  display: flex;
-  margin-top: 2%;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10%;
-}
-
-.ad {
-  width: 100%;
-  box-shadow: 0px 2px 20px 20px rgb(0 0 0 / 25%);
-  border-radius: 25px;
-}
-
-.response-section {
-  width: 100%;
-  margin-bottom: 8%;
-  padding-right: 5%;
-  padding-left: 5%;
-}
-
-.tweet {
-  transition: all 0.2s ease;
-}
-
-.tweet:hover {
-  transition-duration: 0.5s;
-  transform: scale(1.1);
-  box-shadow: 0px 0px 50px rgb(0, 0, 0);
-}
-
-.creators-section {
-  box-shadow: inset 0px -2px 20px 20px rgb(0 0 0 / 28%);
-}
-.creators-container {
-  position: relative;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.creators-container .box {
-  position: relative;
-  width: 225px;
-  height: 300px;
-  overflow: hidden;
-  transition: 0.5s;
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-bottom: 8%;
-  margin-top: 2%;
-  border-radius: 15px;
-}
-
-.creators-container .box:hover {
-  z-index: 1;
-  transform: scale(1.5);
-  box-shadow: 0px 0px 50px rgb(0, 0, 0);
-  border-radius: 5px;
-}
-
-.creators-container .box .imgBx {
-  width: 50%;
-}
-
-.creators-container .box .imgBx:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.596),
-    hsla(0, 0%, 0%, 0.8)
-  );
-  mix-blend-mode: multiply;
-  opacity: 0;
-  transition: 0.5s;
-}
-
-.creators-container .box:hover .imgBx:before {
-  opacity: 1;
-}
-
-.creators-container .box .imgBx img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.creators-container .box .content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  display: flex;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 10%;
-  align-items: flex-end;
-}
-
-p.description {
-  line-height: 2;
-}
-p.follow-us {
-  word-spacing: 20px;
-}
-
-.creators-container .box .content h4 {
-  font-family: "Cairo", sans-serif;
-  font-weight: 600;
-  color: #fff;
-  transition: 0.5s;
-  text-transform: uppercase;
-  margin-bottom: 5px;
-  font-size: 18px;
-  transform: translateY(300px);
-}
-
-.creators-container .box:hover .content h4 {
-  transform: translateY(0);
-  transition-delay: 0.2s;
-}
-
-.creators-container .box .content p {
-  color: #fff;
-  transform: translateY(300px);
-  transition: 0.5s;
-  font-size: 12px;
-}
-
-.creators-container .box:hover .content p {
-  transform: translateY(0);
-  transition-delay: 0.3s;
+    box-shadow: 0px 3px 20px 10px rgb(0 0 0 / 48%);
 }
 
 .review_section {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  background-image: url("https://raw.githubusercontent.com/PAVA-Team-Assignment/PAVA-Website/master/elements/backgroung.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.form-check-label {
-  color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #202020;
+    margin: 0;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .review-form {
-  margin-top: 5%;
-  margin-bottom: 5%;
-  display: flex;
-  width: 40%;
-  flex-direction: column;
-  font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 200;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-right: 5%;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 200;
+}
+
+.page-footer {
+    padding-right: 5%;
+}
+
+.submit-btn {
+    background-color: #38bdf8 !important;
+    color: #171717;
 }
 
 .contact-section {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 500;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    pointer-events: none;
+    justify-content: center;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
 }
 
 .footer-copyright {
-  background-color: #000000f5;
+    background-color: #171717;
 }
